@@ -1,5 +1,5 @@
 * {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     box-sizing: border-box;
 }
 
@@ -10,19 +10,23 @@ body {
 }
 
 .page {
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    padding: 8px 72px 32px;
+    padding: 8px 72px 72px;
     background-color: #1F2937;
     flex: .5 1 auto;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
 }
 
 .header-top {
+    flex-grow: 0 1 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -46,25 +50,30 @@ body {
 }
 
 .header-content {
-    flex: 2 1 auto;
+    flex: 1 1 auto;
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 }
 
 .header-title {
     flex: .5 1 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .header-title h1 {
+    margin: 0;
+    padding: 0;
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
 }
 
 .header-title p {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -79,6 +88,72 @@ body {
 }
 
 .header-content img {
-    flex: 2 0 600px;
+    max-height: 300px;
+    flex: 2 0 400px;
     background-color: grey;
 }
+
+.info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.illustration {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illustration img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3882F6;
+    border-radius: 8px;
+}
+
+.illustration figcaption {
+    text-align: center;
+}
+
+.quote {
+    padding: 0 200px;
+    
+    background-color: #E5E7EB;
+    flex: .5 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    /* align-content: center; */
+}
+
+.quote-author {
+    font-size: 18px;;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: right;
+    padding-right: 16px;
+}
+
