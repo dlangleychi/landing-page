@@ -2,3 +2,39 @@
     /* border: 2px solid red; */
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 8px 48px;
+    background-color: #1F2937;
+    flex: .5 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-top ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
